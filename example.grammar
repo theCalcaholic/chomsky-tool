@@ -1,0 +1,29 @@
+S -> NP VP
+NP -> NAME
+VP -> VPAKK | VPDAT | V
+VNOOBJ -> 'läuft'
+
+VPAKK -> VAKK NAKK
+VPDAT -> VDAT NDAT
+
+NP -> SNOM
+SNOM -> 'das' NNEUT | 'der' NMASK | 'die' NFEM
+SAKK -> 'das' NNEUT | 'den' NMASK | 'die' NFEM
+SDAT -> 'dem' NNEUT | 'dem' NMASK | 'der' NFEM
+
+NAME -> 'Simon' | 'Rike'
+
+N -> NNEUT | NMASK | NFEM
+NNEUT -> 'Haus'
+NMASK -> 'Tisch'
+NMFEM -> 'Klausur'
+
+V -> VAKK SAKK | VDAT SDAT | VADV | VAKKDAT SAKK SDAT
+V -> 'geht' | 'existiert'
+
+VADV -> 'ist' ADJ
+VAKK -> 'sieht' | 'empfiehlt' | 'liebt' | 'ignoriert'
+VDAT -> 'glaubt' | 'nähert sich'
+VAKKDAT -> 'erklärt'
+
+ADJ -> 'betrübt'
